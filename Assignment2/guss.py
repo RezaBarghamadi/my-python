@@ -1,7 +1,7 @@
 import random
-
+print ("Enter one Number For Start This Game")
 computer_number= random.randint(1,10)
-for i in range(10):
+while 1==1:
     person_number=int(input())
 
     if computer_number==person_number:
