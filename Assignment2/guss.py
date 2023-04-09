@@ -12,3 +12,4 @@ while 1==1:
     elif computer_number > person_number:
         print("bishtaresh kon 📤")
 
+print(person_number)
