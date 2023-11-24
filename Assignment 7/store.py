@@ -90,10 +90,18 @@ def show():
 
 
 def  buy():
-    ...
+    while True:
+        resived=int(input("Enter Your Product Code :"))
+        for product in PRODUCTS:
+            if product["code"]==resived or product["product"]==resived:
+                print("This Product is avalible 🥰")
 
+            number=input("Enter Number : ")
 
-
+            if product["some"] < number:
+                print("Not Available Some This Product ")
+        
+            break
 
 def write_database():
     ...
