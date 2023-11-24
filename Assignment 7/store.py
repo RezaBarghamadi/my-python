@@ -93,8 +93,7 @@ def  buy():
     ...
 
 
-def exit():
-    ...
+
 
 def write_database():
     ...
@@ -103,9 +102,9 @@ def qr():
     while True:
         input_code = input("Enter a code or name to find : ")
         for p in PRODUCTS:
-            if p["code"] == input_code or p["name"] == input_code:
-                print(p["code"],"\t\t",p["name"],"\t\t",p["price"],"\t\t")
-                product = str(p["code"]) + "\t\t" + str(p["name"]) + "\t\t" +str(p["price"])
+            if p["code"] == input_code or p["product"] == input_code:
+                print(p["code"],"\t\t",p["product"],"\t\t",p["price"],"\t\t")
+                product = str(p["code"]) + "\t\t" + str(p["product"]) + "\t\t" +str(p["price"])
                 Qrcodeu = qrcode.make(product)
                 Qrcodeu.save("Qrcode.png")
                 print("Qrcode saved")
@@ -136,6 +135,8 @@ while True:
         buy()
     elif choice==7:
          write_database()
-         exit()
+         exit(0)
     elif choice==8:
-        qr()     
+        qr()   
+    else:
+        print("Please Enter Num Just This Menu!!!!!!!")  
