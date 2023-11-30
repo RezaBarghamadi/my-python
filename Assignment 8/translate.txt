@@ -212,3 +212,5 @@ school
 madrese
 office
 daftar kar
+cat
+gorbeh
