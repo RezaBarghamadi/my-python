@@ -29,8 +29,7 @@ def Main_Func(message) :
         Start_Game(message)
     elif message.text == "New game" :
         New_Game(message)
-    elif message.text == "Home" :
-        ...
+
     elif message.text == "Age" :
         Get_Birthday(message)
     elif message.text == "Voice" :
