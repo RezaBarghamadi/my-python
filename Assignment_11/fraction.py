@@ -24,8 +24,9 @@ class Fraction:
 
         return x
     
-    def div(self):
-        ...
+    def div(self,k2):
+        res_s=self.s/k2.s
+        x=Fraction(res_s)
 
 
     def fraction_to_number(self):
@@ -56,3 +57,8 @@ print("Fraction Sum : ")
 
 f=b.sum(a)
 f.show()
+
+print("Fraction Div : ")
+
+
+
