@@ -1,39 +1,18 @@
-import cv2
-
-my_image=cv2.imread("ches.jpg")
-print(my_image.shape)
-
-for i in range(50,100):
-    for j in range(0,50):
-            my_image[i,j]=0
-
-for i in range(150,200):
-    for j in range(0,50):
-            my_image[i,j]=0
-
-for i in range(250,300):
-    for j in range(0,50):
-            my_image[i,j]=0
-
-for i in range(350,400):
-    for j in range(0,50):
-            my_image[i,j]=0   
-for i in range(450,500):
-    for j in range(0,50):
-            my_image[i,j]=0  
-for i in range(550,600):
-    for j in range(0,50):
-            my_image[i,j]=0   
-
-
-for i in range(150,200):
-    for j in range(100,150):
-            my_image[i,j]=0    
-
-for i in range(0,50):
-    for j in range(50,100):
-            my_image[i,j]=0
-
- #my_image[0:50,0:50]=0
-cv2.imshow("chess",my_image)
-cv2.waitKey()
+import numpy as np 
+import matplotlib.pyplot as plt 
+from matplotlib.colors import LogNorm 
+dx, dy = 0.016, 0.06
+P = np.arange(-5.0, 5.0, dx) 
+print(P, "\n"*3) 
+Q = np.arange(-5.0, 5.0, dy) 
+print(Q, "\n"*3) 
+P, Q = np.meshgrid(P, Q) 
+print(P, "\n"*3, Q) 
+  
+min_max = np.min(P), np.max(P), np.min(Q), np.max(Q) 
+res = np.add.outer(range(8), range(8)) % 2
+plt.imshow(res, cmap="binary_r") 
+plt.xticks([]) 
+plt.yticks([]) 
+plt.title("Using Matplotlib Python to Create chessboard") 
+plt.show() 
