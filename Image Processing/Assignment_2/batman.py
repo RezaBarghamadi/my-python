@@ -16,3 +16,4 @@ cv2.putText(image,"My BATMAN ",(300,500),cv2.FONT_HERSHEY_SIMPLEX ,
 cv2.imshow("res",image)
 
 cv2.waitKey()
+cv2.imwrite("batman.jpg",image)
