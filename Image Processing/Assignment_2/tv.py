@@ -1,7 +1,9 @@
 import numpy as np	
 import cv2 
+import imageio
 image = cv2.imread("tr.jpg") 	
 image = cv2.cvtColor (image , cv2.COLOR_BGR2GRAY)
+
 rows, cols= image.shape
 print(image.shape)
 writer=cv2.VideoWriter("noise", cv2.VideoWriter_fourcc(*'mp4v'), 30, (cols, rows))
@@ -21,3 +23,4 @@ writer.release()
 	
 cv2.rectangle(image, (55, 215), (300, 28), 0, 1) 
 
+imageio.mimsave('tv.gif', image, fps=60)

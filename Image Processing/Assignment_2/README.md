@@ -6,3 +6,15 @@
 #Output 
 
 ![batman](https://github.com/RezaBarghamadi/my-python/assets/43950994/731e20ec-cd36-4a71-9122-7351f52f0132)
+
+#Input TV
+
+
+
+![tr](https://github.com/RezaBarghamadi/my-python/assets/43950994/a5804ed0-cf82-4fa7-b40a-bbefc3b8be8b)
+
+
+
+#Output Tv
+
+![Screenshot (1244)](https://github.com/RezaBarghamadi/my-python/assets/43950994/30aaae7a-678e-4be6-87c7-2ea9e0b5896c)
